@@ -1,0 +1,8 @@
+# API keys and sensitive data
+config.js
+
+# Node modules
+node_modules/
+
+# Environment files
+.env

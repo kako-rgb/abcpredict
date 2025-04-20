@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Team Comparison</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js for bar graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Left container: Live Matches -->
+        <div class="live-matches">
+            <h2>Live Matches</h2>
+            <div class="matches-container" id="liveMatches">
+                <!-- Live matches will be loaded here -->
+                <div class="loading">Loading live matches...</div>
+            </div>
+        </div>
+
+        <!-- Middle container: Search and Comparison -->
+        <div class="search-comparison">
+            <h1>Soccer Team Comparison</h1>
+            <div class="search-container">
+                <div class="search-box">
+                    <label for="homeTeam">Home Team</label>
+                    <input type="text" id="homeTeam" placeholder="Enter home team name">
+                    <div class="suggestions" id="homeSuggestions"></div>
+                </div>
+                <div class="search-box">
+                    <label for="awayTeam">Away Team</label>
+                    <input type="text" id="awayTeam" placeholder="Enter away team name">
+                    <div class="suggestions" id="awaySuggestions"></div>
+                </div>
+            </div>
+            <button id="compareBtn" class="compare-btn">Compare</button>
+            
+            <div class="comparison-results" id="comparisonResults">
+                <!-- Comparison results will be displayed here -->
+                <div class="stats-container">
+                    <canvas id="statsChart"></canvas>
+                </div>
+                <div class="league-positions">
+                    <div id="homeTeamPosition"></div>
+                    <div id="awayTeamPosition"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right container: Trending News -->
+        <div class="trending-news">
+            <h2>Trending Soccer News</h2>
+            <div class="news-container" id="trendingNews">
+                <!-- Trending news will be loaded here -->
+                <div class="loading">Loading trending news...</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
