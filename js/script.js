@@ -3,7 +3,7 @@ let selectedHomeTeam = null;
 let selectedAwayTeam = null;
 
 // Import API configuration
-import { API_KEY, API_URL } from '../config.js';
+import { API_KEY, API_URL } from './config.js';
 
 const API_HEADERS = {
     "x-apisports-key": API_KEY

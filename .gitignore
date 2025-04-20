@@ -1,5 +1,6 @@
 # API keys and sensitive data
 config.js
+js/config.js
 
 # Node modules
 node_modules/
